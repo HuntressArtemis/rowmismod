@@ -14,7 +14,7 @@ namespace rowmismod.Content.Items
 		{
 			Item.damage = 1000;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 50;
+			Item.width = 40;
 			Item.height = 40;
 			Item.useTime = 20;
 			Item.useAnimation = 20;
