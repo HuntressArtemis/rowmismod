@@ -12,7 +12,7 @@ namespace rowmismod.Content.Items
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.rowmismod.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 999;
+			Item.damage = 2000;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 40;
 			Item.height = 40;
