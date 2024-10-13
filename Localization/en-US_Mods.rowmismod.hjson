@@ -2,7 +2,7 @@
 
 Items: {
 	TestSword: {
-		DisplayName: "Test Sword"
+		DisplayName: Test Sword
 		Tooltip:
 			'''
 			Template of an item
@@ -11,3 +11,5 @@ Items: {
 			'''
 	}
 }
+
+NPCs.MoonlightButterfly.DisplayName: Moonlight Butterfly
