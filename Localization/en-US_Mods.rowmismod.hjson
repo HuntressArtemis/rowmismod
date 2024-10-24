@@ -10,6 +10,12 @@ Items: {
 			It's snowing on Mt.Fuji
 			'''
 	}
+
+	FireWhip: {
+		Tooltip: ""
+		DisplayName: Fire Whip
+	}
 }
 
 NPCs.MoonlightButterfly.DisplayName: Moonlight Butterfly
+Projectiles.FireWhipProjectile.DisplayName: Fire Whip Projectile
