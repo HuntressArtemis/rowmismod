@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rowmismod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39c071decb44db3e952d87f0b3e35d43999ef20a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8ec5b63b435c773b9888c35bb6cfc3de5385758")]
 [assembly: System.Reflection.AssemblyProductAttribute("rowmismod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rowmismod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

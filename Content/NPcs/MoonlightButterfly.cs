@@ -74,6 +74,8 @@ namespace rowmismod.Content.NPcs
 			// }
 		}
 
+
+
         public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)
         {
             NPC.lifeMax = (int)(NPC.lifeMax * 0.8f * balance * bossAdjustment);
@@ -200,8 +202,78 @@ namespace rowmismod.Content.NPcs
 			}
 		}
 
+		int UpAndDownTimer = 0;
+		bool GoingUp = true;
+		bool MovingSide = false;
+		int MovingSideTimer = 0;
+		bool Stopping = false;
         private void DoFirstStage(Player player) {
+			AttackTimer++;
 
+			if (GoingUp) {
+				if (NPC.velocity.Y > -2.2) {
+					NPC.velocity.Y -= 0.05f;
+				}
+			}
+
+			else {
+				if (NPC.velocity.Y < 2.2) {
+					NPC.velocity.Y += 0.05f;
+				}
+			}
+
+			UpAndDownTimer++;
+
+			if (UpAndDownTimer > 90) {
+				GoingUp = !GoingUp;
+				UpAndDownTimer = 0;
+			}
+
+			if (MovingSide) {
+				MovingSideTimer++;
+				if (Math.Abs(player.Center.X - NPC.Center.X) > 600 && MovingSideTimer > 120) {
+					MovingSide = false;
+					MovingSideTimer = 0;
+					Stopping = true;
+				}
+				else if (MovingSideTimer > 300) {
+					MovingSide = false;
+					MovingSideTimer = 0;
+					Stopping = true;
+				}
+			}
+
+
+			if (AttackTimer % 600 == 0) {
+				if (player.Center.X > NPC.Center.X) {
+					NPC.velocity.X = Utils.Clamp(1f * (player.Center.X - NPC.Center.X) / 200f, 3f, 10f);
+				}
+				else {
+					NPC.velocity.X = Utils.Clamp(1f * (player.Center.X - NPC.Center.X) / 200f, -3f, -10f);
+				}
+				MovingSide = true;
+			}
+
+			if (Stopping) {
+				if (Math.Abs(NPC.velocity.X) <= 0.1f && Math.Abs(NPC.velocity.X) >= -0.1f) {
+					NPC.velocity.X = 0f;
+					Stopping = false;
+				}
+				else if (NPC.velocity.X > 0.1f) {
+					NPC.velocity.X -= 0.1f;
+				}
+				else if (NPC.velocity.X < -0.1f) {
+					NPC.velocity.X += 0.1f;
+				}
+				
+
+			}
+				
+			
+			
+				
+			
+		
         }
 
         private void DoSecondStage(Player player) {
