@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Beheerder\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj": {}
+    "C:\\Users\\bramw\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Beheerder\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj": {
+    "C:\\Users\\bramw\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Beheerder\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj",
+        "projectUniqueName": "C:\\Users\\bramw\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj",
         "projectName": "rowmismod",
-        "projectPath": "C:\\Users\\Beheerder\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj",
-        "packagesPath": "C:\\Users\\Beheerder\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Beheerder\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\obj\\",
+        "projectPath": "C:\\Users\\bramw\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\rowmismod.csproj",
+        "packagesPath": "C:\\Users\\bramw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bramw\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\rowmismod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Beheerder\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\bramw\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

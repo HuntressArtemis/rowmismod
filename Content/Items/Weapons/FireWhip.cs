@@ -3,16 +3,16 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using rowmismod.Content.DamageClasses;
+
 
 namespace rowmismod.Content.Items.Weapons
 {
 	public class FireWhip : ModItem
 	{
-		public override void SetDefaults() {
-			// Call this method to quickly set some of the properties below.
-			//Item.DefaultToWhip(ModContent.ProjectileType<ExampleWhipProjectileAdvanced>(), 20, 2, 4);
+		public override void SetDefaults() {			
 
-			Item.DamageType = DamageClass.Magic;
+			Item.DamageType = ModContent.GetInstance<PyromancyClass>();
 			Item.damage = 100;
 			Item.knockBack = 3;
 			Item.rare = ItemRarityID.Yellow;
